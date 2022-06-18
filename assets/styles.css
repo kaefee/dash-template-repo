@@ -1,0 +1,43 @@
+.bigtextgray {font-size:3em; font-weight: bold;color: darkgrey; }
+
+
+
+.card {
+    #min-height:100px;
+    border-width: 0;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(28, 39, 60, 0.1);
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+
+
+}
+
+.card-title {
+    font-weight: 700;
+    color: #1c273c;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.card-intro{
+    color: #7987a1;
+    font-size: 12px;
+}
+
+.container-fluid{
+    background-color:rgba(211, 211, 211, 0.117);
+}
+
+.kpi-label {
+    text-transform: none;
+    color: #031b4e;
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+
+.selector-label {
+    font-size: 0.875rem;
+}
