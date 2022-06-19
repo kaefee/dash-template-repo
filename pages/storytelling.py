@@ -4,13 +4,13 @@ from dash import html , dcc
 import dash_bootstrap_components as dbc
 
 # dash-labs plugin call, menu name and route
-dash.register_page(__name__, path="/historytelling")
+dash.register_page(__name__, path="/storytelling")
 
 from components.markdown.markformat import markformat
 from components.maps.mapsample import mapsample
 
-file1 = open('./data/mdsamples/history1.md')
-file2 = open('./data/mdsamples/history2.md')
+file1 = open('./data/mdsamples/story1.md')
+file2 = open('./data/mdsamples/story2.md')
 
 texto1  = markformat('Citizenship', file1.read())
 texto2  = markformat('Global Diversity', file2.read())
