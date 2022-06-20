@@ -1,16 +1,14 @@
-
 from dash import html
 import dash_bootstrap_components as dbc
 from components.maps.mapcol_municipios import mapcol_municipios
 from dash_labs.plugins.pages import register_page
-
 
 from components.sampledf.model import df_costos
 from components.sampledf.model import df_markers
 
 mapa_colombia_municipios = mapcol_municipios('Mapa municipios Colombia', 'id_figura_mapa_colombia',df_costos, df_markers)
 
-register_page(__name__, path="/mapamun")
+register_page(__name__, path="/mapa_municipios")
 
 layout= html.Div(
     [

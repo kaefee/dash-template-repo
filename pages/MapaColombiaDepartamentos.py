@@ -1,3 +1,4 @@
+
 from dash import html , dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
 from dash_labs.plugins.pages import register_page
@@ -6,10 +7,8 @@ from components.maps.mapcol_departamentos import mapcol_departamentos
 
 
 from components.sampledf.model import df_maptest
-from components.sampledf.model import df_markers
 from components.table.table import table
 
-from app import app
 
 mapa_colombia_departamentos = mapcol_departamentos('Mapa Departamentos Colombia', 'div_municipios_fig2',df_maptest)
 

@@ -11,6 +11,7 @@ from components.maps.mapsample import mapsample
 
 
 kpi3plot = kpiplot('Total KPI', df_costos['VALUE'], 'count')
+kpi4plot = kpiplot('Total User', df_costos['VALUE'], 'count')
 
 kpi1 = kpibadge('325', 'Total kpi', 'Danger')
 kpi2 = kpibadge('1500', 'Total sales', 'Approved')
