@@ -1,8 +1,9 @@
 import dash
 from dash import html , dcc
 import dash_bootstrap_components as dbc
+from dash_labs.plugins import register_page
 
-dash.register_page(__name__, path="/")
+register_page(__name__, path="/")
 
 from components.kpi.kpibadge import kpibadge
 from components.kpi.kpiplot import kpiplot

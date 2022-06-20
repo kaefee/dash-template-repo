@@ -2,9 +2,10 @@
 import dash
 from dash import html , dcc
 import dash_bootstrap_components as dbc
+from dash_labs.plugins import register_page
 
 # dash-labs plugin call, menu name and route
-dash.register_page(__name__, path="/basicpage")
+register_page(__name__, path="/basicpage")
 
 from components.maps.mapsample import mapsample
 

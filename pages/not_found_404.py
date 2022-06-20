@@ -1,8 +1,9 @@
 import dash_bootstrap_components as dbc
 from dash import html
 import dash
+from dash_labs.plugins import register_page
 
-dash.register_page(__name__, path="/404")
+register_page(__name__, path="/404")
 
 layout = dbc.Row([
     dbc.Col([
