@@ -1,7 +1,6 @@
-import dash
 from dash import html , dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
-from dash_labs.plugins import register_page
+from dash_labs.plugins.pages import register_page
 
 from components.maps.mapcol_departamentos import mapcol_departamentos
 
