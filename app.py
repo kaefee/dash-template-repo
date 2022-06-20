@@ -9,6 +9,7 @@ from callbacks import register_callbacks
 app = dash.Dash(
     __name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.themes.FLATLY], update_title='Cargando...'
 )
+app.config.suppress_callback_exceptions=True
 
 
 #Top menu, items get from all pages registered with plugin.pages
