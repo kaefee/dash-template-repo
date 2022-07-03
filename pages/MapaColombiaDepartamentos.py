@@ -108,11 +108,9 @@ layout= html.Div(
         ],prevent_initial_call=True
     )
 def update_map(selector_municipio,selector_year,nclicks):
-        df_filtrado = mapa_colombia_departamentos.df[mapa_colombia_departamentos.df['DEPARTAMENTO'].isin(selector_municipio)]
+        df_filtrado = df_maptest[df_maptest['DEPARTAMENTO'].isin(selector_municipio)]
         df_filtrado = df_filtrado[df_filtrado['COUNT']<(10**selector_year)]
         mapa_colombia_departamentos.df = df_filtrado
         nuevo_mapa = mapa_colombia_departamentos.display()
-        #mapa_filtrado = mapcol_departamentos('Mapa Filtrado', 'id_filtrado', df_filtrado )
-        #nuevo_mapa = mapa_filtrado.display()
         return [nuevo_mapa]
 

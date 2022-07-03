@@ -12,6 +12,7 @@ app = dash.Dash(
 app.config.suppress_callback_exceptions=True
 
 
+
 #Top menu, items get from all pages registered with plugin.pages
 navbar = dbc.NavbarSimple([
 
