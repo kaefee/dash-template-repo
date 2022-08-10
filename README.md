@@ -11,7 +11,7 @@ A boilerplate template for dash application with some sample code and components
 
 To use the application
 
-- Installrequirements with pip install -r requriments.txt
+- Install requirements with pip install -r requirements.txt
 - Run python app.py
 
 
