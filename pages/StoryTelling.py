@@ -1,10 +1,10 @@
 #libraries
 from dash import html
+import dash
 import dash_bootstrap_components as dbc
-from dash_labs.plugins.pages import register_page
 
 # dash-labs plugin call, menu name and route
-register_page(__name__, path="/storytelling")
+dash.register_page(__name__, path="/storytelling")
 
 from components.markdown.markformat import markformat
 from components.maps.mapsample import mapsample

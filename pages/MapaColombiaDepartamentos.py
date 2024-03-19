@@ -1,7 +1,11 @@
-
-from dash import html , dcc, callback, Input, Output, State
+#libraries
+import dash
+from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
-from dash_labs.plugins.pages import register_page
+
+    
+# dash register page
+dash.register_page(__name__, path="/mapa2")
 
 from components.maps.mapcol_departamentos import mapcol_departamentos
 
@@ -21,7 +25,6 @@ params1 = {
 tabla_datos_departamentos = table(df_maptest,params1)
 
 
-register_page(__name__, path="/mapa2")
 
 layout= html.Div(
     [

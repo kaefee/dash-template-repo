@@ -1,6 +1,5 @@
 import dash
 import dash_bootstrap_components as dbc
-from dash_labs.plugins.pages import register_page
 
 
 from components.table.table import *
@@ -9,7 +8,7 @@ from components.sampledf.model import df_costos, df_opsales
 data = df_costos
 data2 = df_opsales
 
-register_page(__name__, path="/tablas")
+dash.register_page(__name__, path="/tablas")
 
 params1 = {
             'title': 'Users', 

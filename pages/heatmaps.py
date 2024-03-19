@@ -1,8 +1,12 @@
-from dash_labs.plugins.pages import register_page
+#libraries
+import dash
+from dash import html, dcc, callback, Input, Output
+import dash_bootstrap_components as dbc
 
-register_page(__name__, path="/heatmaps")
+    
+# dash register page
+dash.register_page(__name__)
 
-from dash import  dcc, html, Input, Output, callback
 import plotly.express as px
 
 df = px.data.medals_wide(indexed=True)

@@ -1,14 +1,13 @@
 #libraries
 import dash
-import dash_labs as dl
+from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 
 from callbacks import register_callbacks
 
 # Dash instance declaration
-app = dash.Dash(
-    __name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.themes.FLATLY], update_title='Cargando...'
-)
+app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.FLATLY])
+
 app.config.suppress_callback_exceptions=True
 
 
@@ -39,7 +38,7 @@ navbar = dbc.NavbarSimple([
 app.layout = dbc.Container(
     [
         navbar,
-        dl.plugins.page_container,
+	    dash.page_container
     ],
     className="dbc",
     fluid=True,
