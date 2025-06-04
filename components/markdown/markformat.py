@@ -10,7 +10,7 @@ class markformat:
         self.text = text
 
     def show(self):
-        """Displays the text in markdow format with proper format"""
+        """Displays the text in markdown format with proper format"""
         layout = html.Div(
             [
                 html.H3(self.title,className='md-title d-flex justify-content-start '),
